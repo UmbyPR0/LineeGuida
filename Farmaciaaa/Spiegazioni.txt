@@ -207,3 +207,37 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
+
+
+
+
+
+PER RICERCA CON MENU A TENDINA(IN QUESTO CASO TUTTI I CAP)
+AGGIUNGERE ALLA VIEW:<form method="get"  asp-action="Index">
+    <label for="searchCap">Cerca per CAP:</label>
+    <select name="searchCap" id="searchCap">
+        <option value="">Tutti</option> <!-- Per mostrare tutte le opzioni -->
+        @foreach (var item in ViewBag.Caps)
+        {
+            <option value="@item">@item</option>
+        }
+    </select>
+    <input type="submit" value="Cerca" />
+</form>
+
+CAMBIARE L'INDEX NEL CONTROLLER:
+        // GET: Farmacie
+        public async Task<IActionResult> Index(string? searchCap)
+        {
+            ViewBag.Caps = _context.Farmacies.Select(f => f.Cap).Distinct().OrderBy(c => c).ToList();
+
+            if (searchCap != null)
+                return _context.Farmacies != null ?
+                        View(await _context.Farmacies.Where(f => f.Cap.Contains(searchCap)).Include(f => f.IdComuneNavigation).ToListAsync()) :
+                        Problem("Entity set 'YourDbContext.Farmacies' is null.");
+
+            return _context.Farmacies != null ?
+                        View(await _context.Farmacies.Include(f => f.IdComuneNavigation).ToListAsync()) :
+                        Problem("Entity set 'YourDbContext.Farmacies' is null.");
+        }
+

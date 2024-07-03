@@ -1,6 +1,8 @@
 ﻿
+@* ---------------NOME FARMACIA--------------------------------------------------------------------------------------
+ *@
 @{
-    ViewData["Title"] = "Ricerca per Denominazione";
+    ViewData["Title"] = "Ricerca per Nome della Farmacia";
 }
 
 <h1>@ViewData["Title"]</h1>
@@ -14,6 +16,42 @@
 </form>
 
 
+@* ---------------REGIONE--------------------------------------------------------------------------------------
+ *@
+@{
+    ViewData["Title"] = "Ricerca per Regione";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="SearchByRegione" method="post">
+    <div class="form-group">
+        <label for="regione">regione:</label>
+        <input type="text" class="form-control" id="regione" name="regione" />
+    </div>
+    <button type="submit" class="btn btn-primary">Cerca</button>
+</form>
+
+
+@*  ---------------PROVINCIA--------------------------------------------------------------------------------------
+ *@
+@{
+    ViewData["Title"] = "Ricerca per Provincia";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="SearchByProvincia" method="post">
+    <div class="form-group">
+        <label for="provincia">provincia:</label>
+        <input type="text" class="form-control" id="provincia" name="provincia" />
+    </div>
+    <button type="submit" class="btn btn-primary">Cerca</button>
+</form>
+
+
+@* ---------------COMUNE--------------------------------------------------------------------------------------
+ *@
 @{
     ViewData["Title"] = "Ricerca per Comune";
 }

@@ -9,6 +9,19 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
+<form method="get"  asp-action="Index">
+    <label for="searchCap">Cerca per CAP:</label>
+    <select name="searchCap" id="searchCap">
+        <option value="">Tutti</option> <!-- Per mostrare tutte le opzioni -->
+        @foreach (var item in ViewBag.Caps)
+        {
+            <option value="@item">@item</option>
+        }
+    </select>
+    <input type="submit" value="Cerca" />
+</form>
+
 <table class="table">
     <thead>
         <tr>

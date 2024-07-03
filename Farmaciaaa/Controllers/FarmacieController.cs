@@ -20,11 +20,20 @@ namespace Farmaciaaa.Controllers
         }
 
         // GET: Farmacie
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string? searchCap)
         {
-            var farmacieContext = _context.Farmacies.Include(f => f.IdComuneNavigation);
-            return View(await farmacieContext.ToListAsync());
+            ViewBag.Caps = _context.Farmacies.Select(f => f.Cap).Distinct().OrderBy(c => c).ToList();
+
+            if (searchCap != null)
+                return _context.Farmacies != null ?
+                        View(await _context.Farmacies.Where(f => f.Cap.Contains(searchCap)).Include(f => f.IdComuneNavigation).ToListAsync()) :
+                        Problem("Entity set 'YourDbContext.Farmacies' is null.");
+
+            return _context.Farmacies != null ?
+                        View(await _context.Farmacies.Include(f => f.IdComuneNavigation).ToListAsync()) :
+                        Problem("Entity set 'YourDbContext.Farmacies' is null.");
         }
+
 
         // GET: Farmacie/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -163,14 +172,14 @@ namespace Farmaciaaa.Controllers
 
 
 
-
-
+        //---------------REGIONE--------------------------------------------------------------------------------------
+        [Authorize(Roles ="Admin")]
         [HttpGet]
         public IActionResult SearchByRegione()
         {
-            return View();
+            return View(); //frontend
         }
-
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<IActionResult> SearchByRegione(string regione)
         {
@@ -184,12 +193,15 @@ namespace Farmaciaaa.Controllers
             return View("Index", farmacie);
         }
 
+        //---------------PROVINCIA--------------------------------------------------------------------------------------
+
+        [Authorize]
         [HttpGet]
         public IActionResult SearchByProvincia()
         {
             return View();
         }
-
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> SearchByProvincia(string provincia)
         {
@@ -202,6 +214,8 @@ namespace Farmaciaaa.Controllers
 
             return View("Index", farmacie);
         }
+
+        //---------------COMUNE--------------------------------------------------------------------------------------
 
         [HttpGet]
         public IActionResult SearchByComune()
@@ -221,6 +235,8 @@ namespace Farmaciaaa.Controllers
 
             return View("Index", farmacie);
         }
+
+        //---------------NOME FARMACIA--------------------------------------------------------------------------------------
 
         [HttpGet]
         public IActionResult RicercaNome()
