@@ -1,1 +1,208 @@
-# LineeGuida
+QUERY PER VEDERE IL NOME DELL’UTENTE E NOME DEL DATABASE PER COMPORRE LA QUERY PER L’ASSEGNAZIONE DEI PERMESSI NECESSARI PER LO SCAFFOLD:
+USE [nomedb]; da cambiare
+GO
+SELECT name AS DatabaseName, suser_sname(owner_sid) AS OwnerName
+FROM sys.databases
+WHERE name = 'nome db';da cambiare
+GO
+
+QUERY PER ASSEGNARE I PERMESSI NECESSARI PER FARE LO SCAFFOLD:
+USE [nomedb];
+GO
+ALTER AUTHORIZATION ON DATABASE::[nomedb] TO [nomeutenza]; da cambiare
+GO
+
+
+STRINGA DI CONNESSIONE:
+Scaffold-DbContext "Server=(localdb)\MSSQLLocalDB;Database=Farmacie;Trusted_Connection=True;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+	
+(DA GUARDARE IL SERVER E IL NOME DEL DB)
+NEL PROGETTO
+1)CREARE CONTROLLER:
+
+
+
+
+
+2)CONFIGURAZIONE
+CLASSE DEL MODELLO: IN QUESTO CASO FARMACIE PERCHE E’ ‘LA TABELLA CHE UNISCE TUTTO’ CON GLI INNER JOIN,MAGARI CI SONO CASI CHE LE TABELLE NON SONO COLLEGATE E ALLORA BISOGNA CREARE DUE O PIU CONTROLLER.
+DbContextClass: quel tipo rappresenta il DB dove andare a prendere le tabelle
+ 
+
+3)CREARE LA VIEW:
+CREARE UNA VISUALIZZAZIONE NELLA CARTELLA ‘Views/Home’ CHE LA CHIAMO IN QUESTO CASO   ‘Farmacia’
+
+E METTERE  IL CODICE
+@{
+    ViewData["Title"] = "Farmacie";
+}
+<div class="text-center">
+<h1 class="display-4">Farmacie</h1>
+</div>
+
+4)PER VEDERE LE FARMACIE 
+ ANDARE  SU ‘Shared/_Layout.cshtml’ 
+  <li class="nav-item">
+      <a class="nav-link text-dark" asp-area="" asp-controller="Farmacie" asp-action="Index">Farmacia</a>
+  </li> 
+asp-controller: richiamo la cartella dove ci sono le viste, in questo caso Views/Farmacie
+asp-action: con questo richiami la vista creata prima ,in questo caso ‘Farmacia’
+
+5)ANDARE NEL PROGRAMMA E CAMBIARE IL CODICE CON QUESTO: 
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(connectionString));
+ 
+builder.Services.AddDbContext<FarmacieContext>(options =>
+    options.UseSqlServer(connectionString));
+ 
+builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+
+6)QUERY PER LA RICERCA, DA METTERE DENTRO IL CONTROLLER FARMACIE:
+•	RICERCA PER REGIONE:   
+[Authorize]
+    [HttpGet]
+    public IActionResult SearchByRegione()
+    {
+        return View();
+    }
+    [Authorize]
+    [HttpPost]
+    public async Task<IActionResult> SearchByRegione(string regione)
+    {
+        var farmacie = await _context.Farmacies
+            .Include(f => f.IdComuneNavigation)
+            .ThenInclude(c => c.IdProvinciaNavigation)
+            .ThenInclude(p => p.IdRegioneNavigation)
+            .Where(f => f.IdComuneNavigation.IdProvinciaNavigation.IdRegioneNavigation.Denominazione == regione)
+            .ToListAsync();
+ 
+        return View("Index", farmacie);
+    }
+•	RICERCA PER PROVINCIA:   
+    [Authorize]
+    [HttpGet]
+    public IActionResult SearchByProvincia()
+    {
+        return View();
+    }
+ 
+    [Authorize]
+    [HttpPost]
+    public async Task<IActionResult> SearchByProvincia(string provincia)
+    {
+        var farmacie = await _context.Farmacies
+            .Include(f => f.IdComuneNavigation)
+            .ThenInclude(c => c.IdProvinciaNavigation)
+            .ThenInclude(p => p.IdRegioneNavigation)
+            .Where(f => f.IdComuneNavigation.IdProvinciaNavigation.Denominazione == provincia)
+            .ToListAsync();
+ 
+        return View("Index", farmacie);
+    }
+•	RICERCA PER COMUNE:   
+    [Authorize]
+    [HttpGet]
+    public IActionResult SearchByComune()
+    {
+        return View();
+    }
+ 
+    [Authorize]
+    [HttpPost]
+    public async Task<IActionResult> SearchByComune(string comune)
+    {
+        var farmacie = await _context.Farmacies
+            .Include(f => f.IdComuneNavigation)
+            .ThenInclude(c => c.IdProvinciaNavigation)
+            .ThenInclude(p => p.IdRegioneNavigation)
+            .Where(f => f.IdComuneNavigation.Denominazione == comune)
+            .ToListAsync();
+ 
+        return View("Index", farmacie);
+    }
+•	RICERCA PER NOME FARMACIA:   
+    [Authorize]
+    [HttpGet]
+    public IActionResult RicercaNome ()
+    {
+        return View();
+    }
+ 
+    [Authorize]
+    [HttpPost]
+    public async Task<IActionResult> RicercaNome (string denominazione)
+    {
+        var farmacie = await _context.Farmacies
+            .Include(f => f.IdComuneNavigation)
+            .ThenInclude(c => c.IdProvinciaNavigation)
+            .ThenInclude(p => p.IdRegioneNavigation)
+            .Where(f => f.Descrizionefarmacia.Contains(denominazione))
+            .ToListAsync();
+ 
+        return View("Index", farmacie);
+    }
+}
+PER OGNI API BISOGNA AVERE LA VISTA, IN QUESTO CASO 5 VISTE PER OGNI CONTROLLER,UNA VISTA PER CERCA NOME,UNA PER FARMACIA ECC….
+7)Queste viste vanno create dentro la cartella Views/Farmacie:
+Esempio di vista per ricerca nome: 
+@{
+    ViewData["Title"] = "Ricerca per Denominazione";
+}
+ 
+<h1>@ViewData["Title"]</h1>
+ 
+<form asp-action="RicercaNome" method="post">
+<div class="form-group">
+<label for="denominazione">Denominazione:</label>
+<input type="text" class="form-control" id="denominazione" name="denominazione" />
+</div>
+<button type="submit" class="btn btn-primary">Cerca</button>
+</form>
+
+8)DOPO QUESTO SI METTONO I PERMESSI, SI FA TUTTO NEL PROGRAM,SI ASSEGNANO DEI RUOILI GIA NEL PROGRAM CON EMAIL E PASSWORD GIA’. 
+ COSI’ SI CREANO I TRE RUOLI:
+using (var scope = app.Services.CreateScope())
+{ 
+    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+ 
+    var roles = new[] { "Admin", "Manager", "User" };
+ 
+    foreach (var role in roles)
+    {
+        if (!await roleManager.RoleExistsAsync(role))
+            await roleManager.CreateAsync(new IdentityRole(role));
+    }
+ 
+}
+PER CREARE UN UTENTE ‘Admin ‘:
+using (var scope = app.Services.CreateScope())
+{
+    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
+    
+    string email = "admin@admin.com";
+    string password = "Tango.gay15,";
+ 
+    if (await userManager.FindByEmailAsync(email) == null)
+    {
+        var user = new IdentityUser();
+        user.UserName = email;
+        user.Email = email;
+        user.EmailConfirmed = true;
+ 
+        await userManager.CreateAsync(user, password);
+ 
+        await userManager.AddToRoleAsync(user, "Admin");
+    }
+}
+
+
+
+
+
+
+ 
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddControllersWithViews();
