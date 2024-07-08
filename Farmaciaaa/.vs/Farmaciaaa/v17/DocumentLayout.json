@@ -108,7 +108,7 @@
               "RelativeDocumentMoniker": "Spiegazioni.txt",
               "ToolTip": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Spiegazioni.txt",
               "RelativeToolTip": "Spiegazioni.txt",
-              "ViewState": "AQIAAMoAAAAAAAAAAAAAANgAAAAxAAAA",
+              "ViewState": "AQIAAMcAAAAAAAAAAAAAANgAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2024-07-03T15:11:29.154Z",
               "EditorCaption": ""
@@ -135,8 +135,7 @@
               "RelativeToolTip": "Controllers\\FarmacieController.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAAEwBgAAABlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T09:17:21.976Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T09:17:21.976Z"
             },
             {
               "$type": "Document",
@@ -172,8 +171,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-02T09:18:32.657Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T09:18:32.657Z"
             },
             {
               "$type": "Document",
@@ -185,8 +183,7 @@
               "RelativeToolTip": "Views\\Farmacie\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAYwAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-02T09:19:34.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T09:19:34.694Z"
             },
             {
               "$type": "Document",
@@ -198,8 +195,7 @@
               "RelativeToolTip": "Models\\Farmacie.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T14:53:14.435Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-03T14:53:14.435Z"
             },
             {
               "$type": "Document",
@@ -211,8 +207,7 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T09:19:13.712Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T09:19:13.712Z"
             },
             {
               "$type": "Document",
@@ -236,8 +231,7 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAABIAAAAAAAAAAAAAABcAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-02T09:23:45.791Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T09:23:45.791Z"
             },
             {
               "$type": "Document",
