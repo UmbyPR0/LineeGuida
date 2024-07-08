@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CD4438FC-E262-4605-B487-40CAAB7B3D73}|Farmaciaaa.csproj|c:\\users\\umberto.salvai\\onedrive - scaifinance.it\\desktop\\lineeguida\\farmaciaaa\\views\\farmacie\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CD4438FC-E262-4605-B487-40CAAB7B3D73}|Farmaciaaa.csproj|solutionrelative:views\\farmacie\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CD4438FC-E262-4605-B487-40CAAB7B3D73}|Farmaciaaa.csproj|c:\\users\\umberto.salvai\\onedrive - scaifinance.it\\desktop\\lineeguida\\farmaciaaa\\spiegazioni.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{CD4438FC-E262-4605-B487-40CAAB7B3D73}|Farmaciaaa.csproj|solutionrelative:spiegazioni.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD4438FC-E262-4605-B487-40CAAB7B3D73}|Farmaciaaa.csproj|c:\\users\\umberto.salvai\\onedrive - scaifinance.it\\desktop\\lineeguida\\farmaciaaa\\controllers\\farmaciecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD4438FC-E262-4605-B487-40CAAB7B3D73}|Farmaciaaa.csproj|solutionrelative:controllers\\farmaciecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD4438FC-E262-4605-B487-40CAAB7B3D73}|Farmaciaaa.csproj|c:\\users\\umberto.salvai\\onedrive - scaifinance.it\\desktop\\lineeguida\\farmaciaaa\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD4438FC-E262-4605-B487-40CAAB7B3D73}|Farmaciaaa.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD4438FC-E262-4605-B487-40CAAB7B3D73}|Farmaciaaa.csproj|c:\\users\\umberto.salvai\\onedrive - scaifinance.it\\desktop\\lineeguida\\farmaciaaa\\views\\farmacie\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CD4438FC-E262-4605-B487-40CAAB7B3D73}|Farmaciaaa.csproj|solutionrelative:views\\farmacie\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD4438FC-E262-4605-B487-40CAAB7B3D73}|Farmaciaaa.csproj|c:\\users\\umberto.salvai\\onedrive - scaifinance.it\\desktop\\lineeguida\\farmaciaaa\\models\\farmacie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,10 +71,6 @@
       "RelativeMoniker": "D:0:0:{CD4438FC-E262-4605-B487-40CAAB7B3D73}|Farmaciaaa.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD4438FC-E262-4605-B487-40CAAB7B3D73}|Farmaciaaa.csproj|c:\\users\\umberto.salvai\\onedrive - scaifinance.it\\desktop\\lineeguida\\farmaciaaa\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD4438FC-E262-4605-B487-40CAAB7B3D73}|Farmaciaaa.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CD4438FC-E262-4605-B487-40CAAB7B3D73}|Farmaciaaa.csproj|c:\\users\\umberto.salvai\\onedrive - scaifinance.it\\desktop\\lineeguida\\farmaciaaa\\models\\provincium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD4438FC-E262-4605-B487-40CAAB7B3D73}|Farmaciaaa.csproj|solutionrelative:models\\provincium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -86,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,19 +102,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RicercaNome.cshtml",
-              "DocumentMoniker": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Views\\Farmacie\\RicercaNome.cshtml",
-              "RelativeDocumentMoniker": "Views\\Farmacie\\RicercaNome.cshtml",
-              "ToolTip": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Views\\Farmacie\\RicercaNome.cshtml",
-              "RelativeToolTip": "Views\\Farmacie\\RicercaNome.cshtml",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-03T09:08:12.958Z"
+              "DocumentIndex": 0,
+              "Title": "Spiegazioni.txt",
+              "DocumentMoniker": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Spiegazioni.txt",
+              "RelativeDocumentMoniker": "Spiegazioni.txt",
+              "ToolTip": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Spiegazioni.txt",
+              "RelativeToolTip": "Spiegazioni.txt",
+              "ViewState": "AQIAAMoAAAAAAAAAAAAAANgAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-03T15:11:29.154Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Views\\Farmacie\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Farmacie\\Create.cshtml",
@@ -128,14 +133,14 @@
               "RelativeDocumentMoniker": "Controllers\\FarmacieController.cs",
               "ToolTip": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Controllers\\FarmacieController.cs",
               "RelativeToolTip": "Controllers\\FarmacieController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAEwBgAAABCAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAEwBgAAABlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-02T09:17:21.976Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
@@ -147,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -159,7 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -172,20 +177,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Views\\Farmacie\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Farmacie\\Index.cshtml",
               "ToolTip": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Views\\Farmacie\\Index.cshtml",
               "RelativeToolTip": "Views\\Farmacie\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAYwAwAAAATAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAYwAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-02T09:19:34.694Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Farmacie.cs",
               "DocumentMoniker": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Models\\Farmacie.cs",
               "RelativeDocumentMoniker": "Models\\Farmacie.cs",
@@ -198,7 +203,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T09:19:13.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RicercaNome.cshtml",
+              "DocumentMoniker": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Views\\Farmacie\\RicercaNome.cshtml",
+              "RelativeDocumentMoniker": "Views\\Farmacie\\RicercaNome.cshtml",
+              "ToolTip": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Views\\Farmacie\\RicercaNome.cshtml",
+              "RelativeToolTip": "Views\\Farmacie\\RicercaNome.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-03T09:08:12.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -211,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Framacia.cshtml",
               "DocumentMoniker": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Views\\Home\\Framacia.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Framacia.cshtml",
@@ -223,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Views\\Farmacie\\Delete.cshtml",
               "RelativeDocumentMoniker": "Views\\Farmacie\\Delete.cshtml",
@@ -235,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Views\\Farmacie\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Farmacie\\Details.cshtml",
@@ -247,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -259,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
@@ -271,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
@@ -283,19 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T09:19:13.712Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Provincium.cs",
               "DocumentMoniker": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Models\\Provincium.cs",
               "RelativeDocumentMoniker": "Models\\Provincium.cs",
@@ -307,7 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Frazione.cs",
               "DocumentMoniker": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Models\\Frazione.cs",
               "RelativeDocumentMoniker": "Models\\Frazione.cs",
@@ -319,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "FarmacieContext.cs",
               "DocumentMoniker": "C:\\Users\\Umberto.Salvai\\OneDrive - scaifinance.it\\Desktop\\LineeGuida\\Farmaciaaa\\Models\\FarmacieContext.cs",
               "RelativeDocumentMoniker": "Models\\FarmacieContext.cs",
